@@ -59,11 +59,27 @@ a:hover{
   width: 20%;
 }
 
-#sidebar ul{
-  list-style: none;
+#profile-picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+
 }
+
 
 #main{
   float: right;
-  width: 80%;
+  width: 78%;
+}
+
+@media (max-width:1000px){
+  #main {
+    width: 100%;
+    float: none;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
 }
