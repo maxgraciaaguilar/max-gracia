@@ -1,155 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML Cheat Sheet</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maxgracia.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <a href="blog.html">Go to blog</a>
-        <hr> 
+<body>
 
-        <!-- Headings -->
-        <h1>Heading One</h1>
-        <h2>Heading Two</h2>
-        <h3>Heading Three</h3>
-        <h4>Heading Four</h4>
-        <h5>Heading Five</h5>
-        <h6>Heading Six</h6>
+    <header id="main-header">
+      <div class="container">
+          <ul id="navbar">
+            <li><a href="index.html"><strong>maxgracia.com</strong></a></li>
+            <li><a href="files/resume 7-26.pdf">Resume</a></li>
+            <li><a href="engineering.html">Engineering</a></li>
+            <li><a href="photography.html">Photography</a></li>
+          </ul>
+      </div>
+    </header>
 
-        <!-- Paragraph -->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Necessitatibus aut distinctio accusamus similique nulla 
-            nobis eligendi <strong>voluptatem? Reprehenderit 
-            odit nemo veniam</strong> repudiandae? Veniam sit aliquid dolore 
-            atque magni rem culpa, quisquam vel, suscipit ad deleniti 
-            ut nulla provident, fuga sunt facere ipsa aspernatur 
-            inventore. Maiores porro corrupti blanditiis error?
+
+
+    <hl>
+
+  <div class="container">
+    <section id="main">
+      <blockquote class="quote">
+        <p>"If I have seen further it is by standing on the shoulders of Giants."
         </p>
-        <p>
-            Lorem ipsum dolor sit <em>amet consectetur adipisicing elit. 
-            Necessitatibus aut distinctio</em> accusamus similique nulla 
-            nobis eligendi architecto voluptatem? Reprehenderit 
-            odit nemo veniam repudiandae? Veniam sit aliquid dolore 
-            atque magni rem culpa, quisquam vel, suscipit ad deleniti 
-            ut nulla provident, fuga sunt facere ipsa aspernatur 
-            inventore. <a href="http://google.com" target="_blank">Maiores porro corrupti blanditiis error?</a>
-        </p>
+        <p class="attribution">– Isaac Newton (1675)</p>
+      </blockquote>
 
-        <!-- Lists -->
-         <ul>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-            <li>List item 4</li>
-         </ul>
 
-         <ol>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-            <li>List item 4</li>
-         </ol>
+      <p>Hi there! I am a transfer student at UC Berkeley coming in from a San Diego
+      community college. My experience includes many self-driven and not-so-self-driven
+      projects throughout my college carreer, as well as professional carreer experience
+      in education, product development, and embedded systems.
+    </section>
 
-         <!-- Table -->
+    <aside id="sidebar">
+      <div>My Photo FIXME</div>
+      <p>Electrical and Computer Engineering Student at UC Berkeley</p>
+      <ul id="contact">
+        <li>San Diego, CA</li>
+        <li>UC Berkeley</li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
 
-         <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Max</td>
-                    <td>max@gracia.com</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>john@doe.com</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Sarah</td>
-                    <td>sarah@williams.com</td>
-                    <td>23</td>
-                </tr>
-            </tbody>
-         </table>
+    </aside>
 
-         <br>
-         <hr>
-         <br>
+  </div>
 
-         <!-- Forms -->
-        <form action="process.php" method="POST">
-            <div>
-                <label>First Name</label>
-                <input type="text" name="firstName" placeholder="Enter first name">
-            </div>
-            <br>
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="lastName">
-            </div>
-            <br>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email">
-            </div>
-            <br>
-            <div>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-            </div>
-            <br>
-            <div>
-                <label>Gender</label>
-                <select name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label>Age: </label>
-                <input type="number" name="age" value="30">
-            </div>
-            <br>
-            <div>
-                <label>Birthday: </label>
-                <input type="date" name="birthday">
-            </div>
-            <br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-
-        <!-- Button -->
-
-        <button>Click me!</button>
-
-        <!-- Image -->
-         <br>
-
-        <a href="images/Lollycat.jpg">
-        <img src="images/Lollycat.jpg" alt="My beautiful kitty"
-        width="200px">
-        </a>
-
-        <!-- Quotations -->
-
-        <blockquote cite="http://maxgracia.com">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt et fuga? Dolorum, enim dolores. Accusantium vel tempore tempora quidem consectetur earum, explicabo laborum eveniet doloremque, voluptates vero ex, velit dolor odio aliquid similique voluptatibus impedit culpa officia. Recusandae id cum perspiciatis nam doloremque porro dolores provident ducimus rerum. Laboriosam.
-        </blockquote>
-
-        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
-
-        <p><cite>HTML Crash Course</cite> by Max Gracia</p>
-          
-        <div style="margin-top: 500px;"></div>
-    </body>
+</body>
 </html>
