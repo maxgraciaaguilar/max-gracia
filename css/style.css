@@ -97,7 +97,7 @@ a:hover{
     line-height: 1.4em;
   }
   .quote{
-    font-size: 14px;
+    font-size: 16px;
   }
   #sidebar {
     width: 100%;
@@ -106,12 +106,4 @@ a:hover{
   #sidebar ul{
     display: none;
   }
-}
-
-@media (max-width:500px) {
-
-  #main {
-
-  }
-
 }
