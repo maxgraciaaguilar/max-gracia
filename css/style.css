@@ -60,8 +60,8 @@ a:hover{
 }
 
 #profile-picture{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 
@@ -74,6 +74,17 @@ a:hover{
 }
 
 @media (max-width:1000px){
+  #profile-picture{
+    width: 70px;
+    height: 70px;
+     float: left;
+  }
+  .bio{
+    padding-left: 90px;
+  }
+  h3{
+    margin: 0;
+  }
   #main {
     width: 100%;
     float: none;
@@ -81,5 +92,16 @@ a:hover{
   #sidebar {
     width: 100%;
     float: none;
+  }
+}
+
+@media (max-width:500px) {
+
+  #main {
+    font-size: 12px;
+    line-height: 1.2em;
+  }
+  .quote{
+    font-size: 12px;
   }
 }
