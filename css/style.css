@@ -59,6 +59,11 @@ a:hover{
   width: 20%;
 }
 
+#sidebar ul{
+  list-style: none;
+  padding: 0;
+}
+
 #profile-picture{
   width: 150px;
   height: 150px;
@@ -88,20 +93,25 @@ a:hover{
   #main {
     width: 100%;
     float: none;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  .quote{
+    font-size: 14px;
   }
   #sidebar {
     width: 100%;
     float: none;
+  }
+  #sidebar ul{
+    display: none;
   }
 }
 
 @media (max-width:500px) {
 
   #main {
-    font-size: 12px;
-    line-height: 1.2em;
+
   }
-  .quote{
-    font-size: 12px;
-  }
+
 }
