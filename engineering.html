@@ -1,24 +1,266 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Engineering</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <ul id="navbar">
+        <li><a href="index.html"><strong>maxgracia.com</strong></a></li>
+        <li><a href="files/resume 7-26.pdf" target="_blank">Resume</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="photography.html">Photography</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <header id="main-header">
-      <div class="container">
-          <ul id="navbar">
-            <li><a href="index.html"><strong>maxgracia.com</strong></a></li>
-            <li><a href="files/resume 7-26.pdf">Resume</a></li>
-            <li><a href="engineering.html">Engineering</a></li>
-            <li><a href="photography.html">Photography</a></li>
-          </ul>
+  <div class="container eng">
+    <h1>Engineering</h1>
+
+    <article class="project">
+      <div class="project-media">
+        <div class="pager" data-pager>
+          <div class="pager-view">
+            <div class="pager-track">
+              <img src="images/manteca.png" alt="Manteca land use map, 2021" data-label="Manteca land use">
+              <img src="images/spacing.png" alt="Wind turbine spacing, setback, and rotor diameter" data-label="Turbine spacing">
+              <img src="images/steam.jpg" alt="Combined-cycle gas turbine with heat recovery steam generator" data-label="Gas turbine">
+              <img src="images/pipelines.jpg" alt="U.S. natural gas pipeline network" data-label="Gas pipelines">
+            </div>
+            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
+            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
+          </div>
+          <div class="pager-dots">
+            <button type="button" aria-label="Show Manteca land use"></button>
+            <button type="button" aria-label="Show turbine spacing"></button>
+            <button type="button" aria-label="Show gas turbine"></button>
+            <button type="button" aria-label="Show gas pipelines"></button>
+          </div>
+          <div class="pager-thumbs">
+            <button type="button" aria-label="Show Manteca land use"><img src="images/manteca.png" alt=""></button>
+            <button type="button" aria-label="Show turbine spacing"><img src="images/spacing.png" alt=""></button>
+            <button type="button" aria-label="Show gas turbine"><img src="images/steam.jpg" alt=""></button>
+            <button type="button" aria-label="Show gas pipelines"><img src="images/pipelines.jpg" alt=""></button>
+          </div>
+          <p class="pager-cap" aria-live="polite"></p>
+        </div>
       </div>
-    </header>
+      <div class="project-copy">
+        <h2>Wind vs. Nuclear</h2>
+        <p class="project-meta">Honors project · May 2026</p>
+        <p>An interdisciplinary analysis comparing wind power with natural gas backup against small modular nuclear reactors for a median American city. Each scenario is evaluated on land footprint and dual-use potential, ecological impact, lifecycle carbon dioxide emissions, capacity factor, upfront and operating costs, fuel security, construction timeline, transmission infrastructure, and risk assessment.</p>
+        <p><a href="files/197%20Honors%20Project%20FINAL%20DRAFT.pdf" target="_blank">Read the paper</a></p>
+      </div>
+    </article>
 
+    <article class="project">
+      <div class="project-media">
+        <div class="pager" data-pager>
+          <div class="pager-view">
+            <div class="pager-track">
+              <img class="fit-frame" src="images/IMG_2926.JPG" alt="Both Daft Punk helmets worn, with the visor lights on" data-label="Daft Punk!">
+              <video class="fit-frame" src="images/guyman.mp4" poster="images/poster-guyman.jpg" muted loop playsinline preload="none" data-label="Printing Guy-Man"></video>
+              <video class="fit-frame" src="images/thomas.mp4" poster="images/poster-thomas.jpg" muted loop playsinline preload="none" data-label="Printing Thomas"></video>
+              <img class="fit-frame" src="images/IMG_5225.jpeg" alt="Gold and silver helmet shells with painted parts in the spray booth" data-label="Gold and silver shells">
+              <img class="fit-frame" src="images/dp-primed.jpg" alt="Primed helmet shells and parts before the metallic finish" data-label="Primed shells">
+            </div>
+            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
+            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
+          </div>
+          <div class="pager-dots">
+            <button type="button" aria-label="Show Daft Punk!"></button>
+            <button type="button" aria-label="Show printing Guy-Man"></button>
+            <button type="button" aria-label="Show printing Thomas"></button>
+            <button type="button" aria-label="Show gold and silver shells"></button>
+            <button type="button" aria-label="Show primed shells"></button>
+          </div>
+          <div class="pager-thumbs">
+            <button type="button" aria-label="Show Daft Punk!"><img class="fit-frame" src="images/IMG_2926.JPG" alt=""></button>
+            <button type="button" aria-label="Show printing Guy-Man"><img class="fit-frame" src="images/poster-guyman.jpg" alt=""></button>
+            <button type="button" aria-label="Show printing Thomas"><img class="fit-frame" src="images/poster-thomas.jpg" alt=""></button>
+            <button type="button" aria-label="Show gold and silver shells"><img class="fit-frame" src="images/IMG_5225.jpeg" alt=""></button>
+            <button type="button" aria-label="Show primed shells"><img class="fit-frame" src="images/dp-primed.jpg" alt=""></button>
+          </div>
+          <p class="pager-cap" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="project-copy">
+        <h2>Daft Punk Helmets</h2>
+        <p class="project-meta">Halloween costume - October 2026</p>
+        <p>A full-scale replica of both Daft Punk helmets, built as wearable, fully working costumes. The project covers mechanical design, surface finishing, and embedded electronics: hand-finished 3D-printed shells, vacuum-formed tinted visors, and custom firmware for addressable LED displays. One helmet runs real-time audio spectrum analysis, and the other takes scrolling text from a phone over Bluetooth. The power system is battery-powered and runs within a set current limit.</p>
+        <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7527538068032204801/" target="_blank">See more</a></p>
+      </div>
+    </article>
 
-    <img src="images/construction.gif" alt="Club Penguin Construction">
-  </body>
+    <article class="project">
+      <div class="project-media">
+        <div class="pager" data-pager>
+          <div class="pager-view">
+            <div class="pager-track">
+              <img class="fit-frame" src="images/IMG_2335.jpeg" alt="Two 3D-printed robot grippers with servos and wiring on a workbench" data-label="Robot grippers">
+            </div>
+            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
+            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
+          </div>
+          <div class="pager-dots">
+            <button type="button" aria-label="Show robot grippers"></button>
+          </div>
+          <div class="pager-thumbs">
+            <button type="button" aria-label="Show robot grippers"><img class="fit-frame" src="images/IMG_2335.jpeg" alt=""></button>
+          </div>
+          <p class="pager-cap" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="project-copy">
+        <h2>Vision Based Robot Arm</h2>
+        <p>Description goes here.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-media">
+        <div class="pager" data-pager>
+          <div class="pager-view">
+            <div class="pager-track">
+              <img src="images/construction.gif" alt="SOS Beacon photo 1" data-label="Photo 1">
+              <img src="images/slot-2.svg" alt="SOS Beacon photo 2" data-label="Photo 2">
+              <img src="images/slot-3.svg" alt="SOS Beacon photo 3" data-label="Photo 3">
+            </div>
+            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
+            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
+          </div>
+          <div class="pager-dots">
+            <button type="button" aria-label="Show photo 1"></button>
+            <button type="button" aria-label="Show photo 2"></button>
+            <button type="button" aria-label="Show photo 3"></button>
+          </div>
+          <div class="pager-thumbs">
+            <button type="button" aria-label="Show photo 1"><img src="images/slot-1.svg" alt=""></button>
+            <button type="button" aria-label="Show photo 2"><img src="images/slot-2.svg" alt=""></button>
+            <button type="button" aria-label="Show photo 3"><img src="images/slot-3.svg" alt=""></button>
+          </div>
+          <p class="pager-cap" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="project-copy">
+        <h2>SOS Beacon</h2>
+        <p>Description goes here.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-media">
+        <div class="pager" data-pager>
+          <div class="pager-view">
+            <div class="pager-track">
+              <img src="images/construction.gif" alt="SAAS Pump photo 1" data-label="Photo 1">
+              <img src="images/slot-2.svg" alt="SAAS Pump photo 2" data-label="Photo 2">
+              <img src="images/slot-3.svg" alt="SAAS Pump photo 3" data-label="Photo 3">
+            </div>
+            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
+            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
+          </div>
+          <div class="pager-dots">
+            <button type="button" aria-label="Show photo 1"></button>
+            <button type="button" aria-label="Show photo 2"></button>
+            <button type="button" aria-label="Show photo 3"></button>
+          </div>
+          <div class="pager-thumbs">
+            <button type="button" aria-label="Show photo 1"><img src="images/slot-1.svg" alt=""></button>
+            <button type="button" aria-label="Show photo 2"><img src="images/slot-2.svg" alt=""></button>
+            <button type="button" aria-label="Show photo 3"><img src="images/slot-3.svg" alt=""></button>
+          </div>
+          <p class="pager-cap" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="project-copy">
+        <h2>SAAS Pump</h2>
+        <p>Description goes here.</p>
+      </div>
+    </article>
+  </div>
+  <script>
+    document.querySelectorAll("[data-pager]").forEach(function (pager) {
+      var view = pager.querySelector(".pager-view");
+      var slides = pager.querySelectorAll(".pager-track img, .pager-track video");
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var dots = pager.querySelectorAll(".pager-dots button");
+      var thumbs = pager.querySelectorAll(".pager-thumbs button");
+      var caption = pager.querySelector(".pager-cap");
+      var count = slides.length;
+      var index = 0;
+      if (count < 2) pager.classList.add("pager-single");
+      var drag = 0;
+      var active = false;
+      var origin = 0;
+
+      function paint() {
+        pager.style.setProperty("--i", String(index));
+        pager.style.setProperty("--dx", String(drag));
+        caption.textContent = count < 2
+          ? slides[index].getAttribute("data-label")
+          : String(index + 1) + " of " + String(count) + " · " + slides[index].getAttribute("data-label");
+        dots.forEach(function (dot, n) {
+          dot.setAttribute("aria-pressed", n === index ? "true" : "false");
+        });
+        thumbs.forEach(function (thumb, n) {
+          thumb.setAttribute("aria-pressed", n === index ? "true" : "false");
+        });
+        slides.forEach(function (slide, n) {
+          if (slide.tagName !== "VIDEO") return;
+          if (n === index && !reduceMotion) {
+            var play = slide.play();
+            if (play && play.catch) play.catch(function () {});
+          } else {
+            slide.pause();
+          }
+        });
+      }
+
+      function go(next) {
+        index = (next + count) % count;
+        drag = 0;
+        paint();
+      }
+
+      pager.querySelector(".pager-prev").addEventListener("click", function () { go(index - 1); });
+      pager.querySelector(".pager-next").addEventListener("click", function () { go(index + 1); });
+      dots.forEach(function (dot, n) {
+        dot.addEventListener("click", function () { go(n); });
+      });
+      thumbs.forEach(function (thumb, n) {
+        thumb.addEventListener("click", function () { go(n); });
+      });
+
+      view.addEventListener("pointerdown", function (event) {
+        if (count < 2 || event.button !== 0 || event.target.closest("button")) return;
+        active = true;
+        origin = event.clientX;
+        drag = 0;
+        pager.classList.add("dragging");
+        view.setPointerCapture(event.pointerId);
+      });
+      view.addEventListener("pointermove", function (event) {
+        if (!active) return;
+        drag = Math.round(event.clientX - origin);
+        pager.style.setProperty("--dx", String(drag));
+      });
+      function release() {
+        if (!active) return;
+        active = false;
+        pager.classList.remove("dragging");
+        if (drag <= -48) go(index + 1);
+        else if (drag >= 48) go(index - 1);
+        else go(index);
+      }
+      view.addEventListener("pointerup", release);
+      view.addEventListener("pointercancel", release);
+      paint();
+    });
+  </script>
+</body>
 </html>
