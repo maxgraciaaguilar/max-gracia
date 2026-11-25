@@ -7,13 +7,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header id="main-header">
+  <header id="main-header" class="phone-nav">
     <div class="container">
       <ul id="navbar">
-        <li><a href="index.html"><strong>maxgracia.com</strong></a></li>
-        <li><a href="files/resume 7-26.pdf" target="_blank">Resume</a></li>
-        <li><a href="engineering.html">Engineering</a></li>
-        <li><a href="photography.html">Photography</a></li>
+        <li class="nav-brand"><a href="index.html"><strong>maxgracia.com</strong></a></li>
+        <li class="nav-toggle-slot">
+          <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navbar" aria-label="Menu">
+            <span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </li>
+        <li class="nav-link"><a href="files/resume 7-26.pdf" target="_blank">Resume</a></li>
+        <li class="nav-link"><a href="engineering.html">Engineering</a></li>
+        <li class="nav-link"><a href="photography.html">Photography</a></li>
       </ul>
     </div>
   </header>
@@ -46,5 +51,25 @@
       </section>
     </div>
   </div>
+  <script>
+    (function () {
+      var button = document.querySelector(".nav-toggle");
+      var navbar = document.getElementById("navbar");
+      if (!button || !navbar) return;
+      function setOpen(open) {
+        button.setAttribute("aria-expanded", open ? "true" : "false");
+        navbar.classList.toggle("is-open", open);
+      }
+      button.addEventListener("click", function () {
+        setOpen(button.getAttribute("aria-expanded") !== "true");
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && button.getAttribute("aria-expanded") === "true") {
+          setOpen(false);
+          button.focus();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
