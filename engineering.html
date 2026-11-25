@@ -90,7 +90,7 @@
       </div>
       <div class="project-copy">
         <h2>Daft Punk Helmets</h2>
-        <p class="project-meta">Halloween costume - October 2026</p>
+        <p class="project-meta">Halloween costume · October 2026</p>
         <p>A full-scale replica of both Daft Punk helmets, built as wearable, fully working costumes. The project covers mechanical design, surface finishing, and embedded electronics: hand-finished 3D-printed shells, vacuum-formed tinted visors, and custom firmware for addressable LED displays. One helmet runs real-time audio spectrum analysis, and the other takes scrolling text from a phone over Bluetooth. The power system is battery-powered and runs within a set current limit.</p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7527538068032204801/" target="_blank">See more</a></p>
       </div>
@@ -101,54 +101,30 @@
         <div class="pager" data-pager>
           <div class="pager-view">
             <div class="pager-track">
-              <img class="fit-frame" src="images/IMG_2335.jpeg" alt="Two 3D-printed robot grippers with servos and wiring on a workbench" data-label="Robot grippers">
+              <img class="fit-frame" src="images/IMG_2572.jpeg" alt="Finished SOS beacon with a textured black lid, white SOS lettering, and a round logo button" data-label="Finished beacon">
+              <img class="fit-frame" src="images/IMG_2450.jpeg" alt="Arduino Nano breadboard with two potentiometers, an RGB LED, and jumper wires" data-label="Breadboard circuit">
+              <img class="fit-frame" src="images/IMG_2626.jpeg" alt="Bin of 3D-printed SOS beacon lids and tre-o-bytes enclosure frames" data-label="Printed parts">
             </div>
             <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
             <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
           </div>
           <div class="pager-dots">
-            <button type="button" aria-label="Show robot grippers"></button>
+            <button type="button" aria-label="Show finished beacon"></button>
+            <button type="button" aria-label="Show breadboard circuit"></button>
+            <button type="button" aria-label="Show printed parts"></button>
           </div>
           <div class="pager-thumbs">
-            <button type="button" aria-label="Show robot grippers"><img class="fit-frame" src="images/IMG_2335.jpeg" alt=""></button>
-          </div>
-          <p class="pager-cap" aria-live="polite"></p>
-        </div>
-      </div>
-      <div class="project-copy">
-        <h2>Vision Based Robot Arm</h2>
-        <p>Description goes here.</p>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project-media">
-        <div class="pager" data-pager>
-          <div class="pager-view">
-            <div class="pager-track">
-              <img src="images/construction.gif" alt="SOS Beacon photo 1" data-label="Photo 1">
-              <img src="images/slot-2.svg" alt="SOS Beacon photo 2" data-label="Photo 2">
-              <img src="images/slot-3.svg" alt="SOS Beacon photo 3" data-label="Photo 3">
-            </div>
-            <button type="button" class="pager-prev" aria-label="Previous figure"><span class="pager-chev pager-chev-left"></span></button>
-            <button type="button" class="pager-next" aria-label="Next figure"><span class="pager-chev pager-chev-right"></span></button>
-          </div>
-          <div class="pager-dots">
-            <button type="button" aria-label="Show photo 1"></button>
-            <button type="button" aria-label="Show photo 2"></button>
-            <button type="button" aria-label="Show photo 3"></button>
-          </div>
-          <div class="pager-thumbs">
-            <button type="button" aria-label="Show photo 1"><img src="images/slot-1.svg" alt=""></button>
-            <button type="button" aria-label="Show photo 2"><img src="images/slot-2.svg" alt=""></button>
-            <button type="button" aria-label="Show photo 3"><img src="images/slot-3.svg" alt=""></button>
+            <button type="button" aria-label="Show finished beacon"><img class="fit-frame" src="images/IMG_2572.jpeg" alt=""></button>
+            <button type="button" aria-label="Show breadboard circuit"><img class="fit-frame" src="images/IMG_2450.jpeg" alt=""></button>
+            <button type="button" aria-label="Show printed parts"><img class="fit-frame" src="images/IMG_2626.jpeg" alt=""></button>
           </div>
           <p class="pager-cap" aria-live="polite"></p>
         </div>
       </div>
       <div class="project-copy">
         <h2>SOS Beacon</h2>
-        <p>Description goes here.</p>
+        <p class="project-meta">Treobytes · July 2026</p>
+        <p>A low-cost Arduino beacon kit that middle school students build themselves in a hands-on STEM program and carry on an outdoor hike. The project went through a full engineering design process: an initial design report, measurable requirements, and preliminary, critical, and final design reviews. I designed the enclosure in CAD and produced it with 3D printing and UV printing. I also soldered the components and mass-produced 60 complete kits. Each beacon uses a solderless breadboard circuit with an RGB LED, a speaker, two potentiometers, and a push button, so students can assemble it without tools and then write their own custom features on top of the base code. The snap-fit enclosure clips to a backpack, runs on a single 9V battery, and costs about $14 per kit. A student assembly guide and bill of materials let each build fit in a single class session.</p>
       </div>
     </article>
 
@@ -185,6 +161,12 @@
   </div>
   <script>
     document.querySelectorAll("[data-pager]").forEach(function (pager) {
+      pager.querySelectorAll(".pager-track > img, .pager-track > video").forEach(function (media) {
+        var frame = document.createElement("div");
+        frame.className = "pager-slide";
+        media.parentNode.insertBefore(frame, media);
+        frame.appendChild(media);
+      });
       var view = pager.querySelector(".pager-view");
       var slides = pager.querySelectorAll(".pager-track img, .pager-track video");
       var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
